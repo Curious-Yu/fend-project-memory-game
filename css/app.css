@@ -33,6 +33,7 @@ h1 {
     font-weight: 300;
 }
 
+
 /*
  * Styles for the deck of cards
  */
@@ -114,7 +115,7 @@ h1 {
 /* styles for modal */
 
 .modal_background {
-  position: absolute;
+  position: fixed;
   top:0;
   left: 0;
   height: 100%;
