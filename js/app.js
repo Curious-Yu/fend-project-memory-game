@@ -44,7 +44,6 @@ let moves = 0;
 
 deck.addEventListener('click', event => {
   const clickTarget = event.target;
-  startTime();
   if (matched === 8-1){
     toggleModal();
     gameStats();
@@ -103,7 +102,10 @@ function addMove(){
   const theMove = document.querySelector('.moves');
   moves += 1;
   theMove.innerHTML = "Move(s):" + moves;
-}
+  if (moves === 1){
+    startTime();
+  }
+};
 
 /* codes for the star rating */
 
@@ -128,7 +130,7 @@ const theClock = document.querySelector('.clock');
 /* codes for the timer */
 
 function startTime(){
-  if (moves > 0){
+  if (moves >= 1){
     time++;
     const second = Math.floor(time % 60);
     const minute = Math.floor(time / 60);
