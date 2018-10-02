@@ -34,7 +34,7 @@ function shuffle(array) {
 /* global settings */
 
 let toggledCards = [];
-let matched = 0;
+let matched = 1;
 let moves = 0;
 
 
@@ -44,10 +44,10 @@ let moves = 0;
 
 deck.addEventListener('click', event => {
   const clickTarget = event.target;
-  if (matched === 8-1){
+  if (clickTarget.classList.contains('card') && clickTarget.classList.contains('match')){
     toggleModal();
     gameStats();
-  }else if (clickTarget.classList.contains('card') && !clickTarget.classList.contains('match') && toggledCards.length < 2 && !toggledCards.includes(clickTarget)) {
+  } else if (clickTarget.classList.contains('card') && !clickTarget.classList.contains('match') && toggledCards.length < 2 && !toggledCards.includes(clickTarget)) {
     toggleCard(clickTarget);
     addToggleCard(clickTarget);
     addMove();
@@ -110,12 +110,10 @@ function addMove(){
 /* codes for the star rating */
 
 function hideStar(){
-  if (moves === 16){
+  if (moves === 25){
     document.getElementById('star1').style.display = "none";
-  } else if (moves === 24){
+  } else if (moves === 50){
     document.getElementById('star2').style.display = "none";
-  } else if (moves === 32){
-    document.getElementById('star3').style.display = "none";
   }
 }
 
@@ -166,6 +164,7 @@ function gameStats(){
   document.querySelector('.modal_time').innerHTML = theClock.innerHTML;
   document.querySelector('.modal_moves').innerHTML = 'Moves: ' + moves;
   document.querySelector('.modal_stars').innerHTML = 'Stars:' + starCount;
+  document.querySelector('.modal_message').innerHTML = 'Congratulations!! You are a winner ^_^';
 };
 
 function getStars(){
