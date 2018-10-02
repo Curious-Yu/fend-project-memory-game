@@ -110,12 +110,12 @@ function addMove(){
 /* codes for the star rating */
 
 function hideStar(){
-  if (moves === 25){
+  if (moves >= 25){
     document.getElementById('star1').style.display = "none";
-  } else if (moves === 50){
+  } else if (moves >= 50){
     document.getElementById('star2').style.display = "none";
   }
-}
+};
 
 /* global settings */
 
