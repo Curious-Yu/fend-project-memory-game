@@ -38,6 +38,26 @@ For specific, detailed instructions, look at the project instructions in the [Ud
 
 More details on the [Memory Game project rubric](https://review.udacity.com/#!/rubrics/591/view)
 
+## Built With
+
+JavaScript Shuffle Array - [Sample](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array/2450976#2450976)
+
+Implemented Functions:
+
+[setTimeout()](https://www.w3schools.com/jsref/met_win_setinterval.asp)
+
+[setInterval()](https://www.w3schools.com/jsref/met_win_settimeout.asp)
+
+[clearInterval()](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
+
+[querySelector()](https://www.w3schools.com/jsref/met_document_queryselector.asp)
+
+[arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+[innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+
+[location.reload](https://developer.mozilla.org/en-US/docs/Web/API/Location/reload)
+
 ## How to clone the game
 
   1. On GitHub, navigate to the main page of the repository.
