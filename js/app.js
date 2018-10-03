@@ -34,7 +34,7 @@ function shuffle(array) {
 /* global settings */
 
 let toggledCards = [];
-let matched = 1;
+let matched = 0;
 let moves = 0;
 
 
@@ -44,16 +44,18 @@ let moves = 0;
 
 deck.addEventListener('click', event => {
   const clickTarget = event.target;
-  if (clickTarget.classList.contains('card') && clickTarget.classList.contains('match')){
-    toggleModal();
-    gameStats();
-  } else if (clickTarget.classList.contains('card') && !clickTarget.classList.contains('match') && toggledCards.length < 2 && !toggledCards.includes(clickTarget)) {
+  if (clickTarget.classList.contains('card') && !clickTarget.classList.contains('match') && toggledCards.length < 2 && !toggledCards.includes(clickTarget)) {
     toggleCard(clickTarget);
     addToggleCard(clickTarget);
     if (toggledCards.length === 2) {
       checkMatch();
       addMove();
       hideStar();
+      if (matched === 8){
+        stopTime();
+        toggleModal();
+        gameStats();
+      }
     }
   }
 });
@@ -73,8 +75,8 @@ function addToggleCard(clickTarget) {
 function checkMatch() {
   if (toggledCards[0].firstElementChild.className === toggledCards[1].firstElementChild.className) {
     matchCard ();
-    console.log(matched);
     matched++;
+    console.log(matched);
   }
   else {
     notMatchCard();
@@ -138,7 +140,6 @@ function startTime(){
 
 function stopTime(){
   clearInterval(interval);
-  theClock.innerHTML = "Time: 00:00";
 };
 
 /* codes for the restart */
