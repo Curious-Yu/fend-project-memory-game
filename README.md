@@ -34,7 +34,7 @@ For specific, detailed instructions, look at the project instructions in the [Ud
   3. A restart button allows the player to reset the game board, the timer, and the star rating.
   4. The game displays a star rating (from 1 to at least 3) that reflects the player's performance. At the beginning of a game, it should display at least 3 stars. After some number of moves, it should change to a lower star rating. After a few more moves, it should change to a even lower star rating (down to 1).
   5. When the player starts a game, a displayed timer should also start. Once the player wins the game, the timer stops.
-  6. Game displays the current number of moves a user has made.
+  6. You will get to see how well you done detailed in Game Stats!!!
 
 More details on the [Memory Game project rubric](https://review.udacity.com/#!/rubrics/591/view)
 
