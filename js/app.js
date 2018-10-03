@@ -112,9 +112,9 @@ function addMove(){
 /* codes for the star rating */
 
 function hideStar(){
-  if (moves >= 25){
+  if (moves >= 16){
     document.getElementById('star1').style.display = "none";
-  } else if (moves >= 50){
+  } else if (moves >= 32){
     document.getElementById('star2').style.display = "none";
   }
 };
