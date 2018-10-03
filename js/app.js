@@ -165,7 +165,7 @@ function gameStats(){
   document.querySelector('.modal_time').innerHTML = theClock.innerHTML;
   document.querySelector('.modal_moves').innerHTML = 'Moves: ' + moves;
   document.querySelector('.modal_stars').innerHTML = 'Stars:' + starCount;
-  document.querySelector('.modal_message').innerHTML = 'Congratulations!! You are a winner ^_^';
+  document.querySelector('.modal_message').innerHTML = '🏆 Congratulations!! You are the winner 🏆';
 };
 
 function getStars(){
