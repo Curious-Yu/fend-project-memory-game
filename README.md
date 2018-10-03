@@ -14,10 +14,10 @@ Wen Yu - completing the game - [fend-project-memory-game](https://github.com/WYC
 
   1. Open the [Game](https://wycodebook.github.io/fend-project-memory-game/).
   2. Start the game by clicking on cards.
-  3. Cards will turn over so you can see what the icons.
+  3. Cards will turn over so you can see the icons.
   4. Your goal is to match two cards of the same type at a time. The two opening cards will close if they don't match.
   5. Then try to match all pairs in as minimum moves as possible.
-  6. Click the board once more when all pairs are matched to see the Game Stats.
+  6. You will get to see how well you done detailed in Game Stats!!!
 
 ## About the game
 
@@ -34,7 +34,7 @@ For specific, detailed instructions, look at the project instructions in the [Ud
   3. A restart button allows the player to reset the game board, the timer, and the star rating.
   4. The game displays a star rating (from 1 to at least 3) that reflects the player's performance. At the beginning of a game, it should display at least 3 stars. After some number of moves, it should change to a lower star rating. After a few more moves, it should change to a even lower star rating (down to 1).
   5. When the player starts a game, a displayed timer should also start. Once the player wins the game, the timer stops.
-  6. You will get to see how well you done detailed in Game Stats!!!
+  6. A Game Stats will appear when all cards matched.
 
 More details on the [Memory Game project rubric](https://review.udacity.com/#!/rubrics/591/view)
 
