@@ -50,9 +50,9 @@ deck.addEventListener('click', event => {
   } else if (clickTarget.classList.contains('card') && !clickTarget.classList.contains('match') && toggledCards.length < 2 && !toggledCards.includes(clickTarget)) {
     toggleCard(clickTarget);
     addToggleCard(clickTarget);
-    addMove();
     if (toggledCards.length === 2) {
       checkMatch();
+      addMove();
       hideStar();
     }
   }
