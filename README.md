@@ -8,7 +8,7 @@ This is the project 2 of the Udacity/Google-FEND program. The purpose of this pr
 
 Udacity - initial work - [fend-project-memory-game](https://github.com/udacity/fend-project-memory-game)
 
-Wen Yu - completing the game - [fend-project-memory-game](https://github.com/WYCodeBook/fend-project-memory-game)
+Wen Yu - completing the game - [fend-project-memory-game](https://curious-yu.github.io/fend-project-memory-game/)
 
 ## Game instructions
 
